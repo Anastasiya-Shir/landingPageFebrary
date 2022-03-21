@@ -1,0 +1,79 @@
+@font-face{
+  font-family: "Nunico-Italic-Bold";
+  font-style: normal;
+  font-weight: 600;
+  src: url(./fonts/static/Nunito-BoldItalic.ttf);
+}
+:root{
+  --bg-color: #E5E5E5;
+  --font-color:rgba(36, 40, 81, 1);
+  --bth-bg:linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+  --white:#fff;
+
+
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  width:1920px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column ;
+  background:var( --bg-color);
+  font-family: "Nunico-Italic-Bold", sans-serif,Arial, Helvetica, sans-serif;
+
+
+}
+header{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  padding: 63px 215px;
+  width: 1490px;
+  height:60px;
+}
+header img{
+  width: 148px;
+  height: 55px;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row ;
+ 
+
+}
+header ul li{
+  flex-direction: row ;
+  justify-content: space-around; 
+  margin: 0 23px ;
+}
+header ul li a{
+  text-decoration: none;
+  color: var(--font-color);
+
+}
+.call-btn{
+  width: 228px;
+ height: 60px;
+ border: none;
+ color: var(--white);
+  
+ background: var(--bth-bg);
+ border-radius: 30px;
+
+
+}
+
+
+.for-you-pets{
+  display: flex;
+  flex-direction: row;
+  margin: 0 315px ;
+}
+.
