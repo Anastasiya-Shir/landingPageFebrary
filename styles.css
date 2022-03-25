@@ -12,14 +12,38 @@
   src: url(./fonts/Quicksand/static/Quicksand-Regular.ttf);
 }
 
+@font-face{
+  font-family: "Nunito-Extra-Bold";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  src: url(./fonts/static/Nunito-ExtraBold.ttf);
+}
+
+
+
+
+@font-face{
+  font-family: "Nunito-Semi-Bold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  src: url(./fonts/static/Nunito-Bold.ttf);
+}
+
+
 :root{
-  --bg-color: #E5E5E5;
+  --bg-color: #fff8f5;
   --font-color:rgba(36, 40, 81, 1);
   --bth-bg:linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
   --white:#fff;
 
 --p-color:#707283;
 --green-gradient:linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
+--what-we-do-color: #FFECE4;
+--orange:rgba(255, 119, 81, 1);
 } 
 
 body{
@@ -33,6 +57,7 @@ body{
   padding: 0;
   display: flex;
   flex-direction: column ;
+  align-items: center;
   background:var( --bg-color);
   font-family: "Nunico-Italic-Bold", sans-serif,Arial, Helvetica, sans-serif;
 }
@@ -53,7 +78,7 @@ header img{
   height: 55px;
 }
 header ul {
-  list-style: none;
+
   display: flex;
   flex-direction: row ;
  
@@ -65,14 +90,14 @@ header ul li{
   margin: 0 23px ;
 }
 header ul li a{
-  text-decoration: none;
+ 
   color: var(--font-color);
 
 }
 .call-btn{
   width: 228px;
  height: 60px;
- border: none;
+
  color: var(--white);
   
  background: var(--bth-bg);
@@ -97,21 +122,37 @@ header ul li a{
 
 .information{
   height: 640px;
+ 
+  /* background-image: url(./images/Image.png);
+background-size: cover; */
+
+}
+h1{
+  font-family: "Nunito-Extra-Bold";
+  font-size: 64px;
+  line-height: 88px;
+  color: var(--font-color);
 }
 
 .for-you-pets h1 {
-font-weight: Bold;
+/* font-weight: Bold;
 font-style:normal;
+
+color:var(--font-color); */
 font-size: 100px;
-color:var(--font-color);
 width: 630px;
-
-
+line-height: 120px;
+margin:30px 0;
+box-sizing: border-box;
 }
 
 .for-you-pets p{
   font-family: "Quicksand-Regular";
   color:var(--p-color);
+  width: 420px;
+  height: 58px;
+  margin:0;
+  line-height: 34px;
 }
 
 .btn-our-service{
@@ -121,7 +162,7 @@ border-radius: 30px;
 width: 188px;
 height: 60px;
 border: none;
-margin: 60px 20px 0 0;
+margin: 30px 20px 0 0;
 }
 
 .btn-make-apl{
@@ -131,11 +172,409 @@ border-radius: 30px;
 width: 246px;
 height: 60px;
 border: none;
-margin: 60px 20px;
+margin: 30px 0 0 0;
 }
 
 .dog-img{
   width: 650px;
-  height: 640px;
+  height: 650px;
 
+}
+
+.what-we-do{
+  width: 1490px;
+  height: 758px;
+  background-color: var(--what-we-do-color);
+  margin: 0 auto;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+ 
+  
+}
+
+.what-we-do p{
+  font-family: "Nunito-Extra-Bold";
+  color: var(--orange);
+
+}
+
+/* .what-we-do h1{
+  font-family: "Nunito-Extra-Bold";
+  font-size: 64px;
+  line-height: 87px;
+  color: var(--font-color);
+} */
+.cards-what-we-do{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  
+
+ 
+}
+.card-what-we-do{
+  width: 292px;
+  height: 374px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+border-radius: 30px;
+margin: 20px;
+transition-duration: 0.5s;
+}
+
+
+
+
+.card-what-we-do h3{
+  font-family:" Nunito-Extra-Bold";
+  size:26px;
+  line-height: 36px;
+  text-align: center;
+  }
+
+
+
+
+.card-what-we-do p{
+  font-family:" Quicksand-Regular";
+  color:var(--p-color);
+  width: 55%;
+  align-items: center;
+  text-align: center;
+}
+.cards-what-we-do :hover   {
+  background: var(--orange);
+  color: var(--white);
+ 
+}
+.story{
+margin: 104px 120px;
+  display: flex;
+  flex-direction: row;
+
+}
+.symbol{
+  width: 66px;
+  height: 77px;
+  margin-right:129px ;
+}
+.story-information{
+  margin-top: 75px;
+}
+
+.story-information h3{
+  font-family:"Nunito-Extra-Bold" ;
+  color: var(--orange);
+}
+.story-information h1{
+  /* font-family: "Nunito-Extra-Bold";
+
+  line-height: 88px;
+  color: var(--font-color); */
+  width: 80%; 
+  margin: 0;
+  
+}
+.story-information p{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--p-color);
+  width: 60%;
+  margin: 0 0 30px;
+}
+.story-information li{
+font-family:" Nunito-Extra-Bold";
+  color: var(--font-color);
+  margin-bottom: 26px;
+  
+}
+.story-information ul ::before{
+ content :  url(./images/Union.png);
+margin: 0px 15px 26px 0;
+}
+
+.story-information ul :last-child{
+  margin-bottom: 46px;
+}
+.story-information a{
+  background: var(--bth-bg);
+  border-radius: 30px;
+  padding: 16px 35px;
+  color: var(--white);
+  box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
+  
+}
+
+.story .dog-img{
+  width: 492px;
+  height: 632px;
+}
+
+.team{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  background-color: var(--what-we-do-color);
+  margin: 0 auto;
+  padding: 100px 0;
+  border-radius: 50px;
+}
+.team h3{
+  color:var(--orange);
+  margin-bottom: 10px;
+  
+  
+}
+
+.team-cards{
+  display: flex;
+  flex-direction: row;
+  }
+
+.team-card{
+  width: 292px;
+  height: 405px;
+  background-color: var(--white);
+  border-radius: 146px;
+  margin: 60px 20px;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.team-card img{
+  width: 192px;
+  height: 192px;
+  margin-bottom: 30px;
+}
+.team-card .name{
+  font-family: "Nunito-Extra-Bold";
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--font-color);
+  margin-bottom: 7px;
+}
+
+.job{
+  font-family: "Quicksand-Regular";
+  color: var(--orange);
+}
+
+.picture{
+  width: 66px;
+  height: 75px;
+  margin-top: 150px;
+ position: relative;
+ left:800px;
+ 
+}
+.packs{
+  display: flex;
+  flex-direction: row;  
+  justify-content: center;
+  width: 90%;
+}
+
+.packs-cards{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width:85%;
+  margin-bottom: 160px;
+}
+
+.pack-card{
+  background-color: var(--white);
+  text-align: center;
+  width:30%;
+  height: 743px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+
+border: black solid 6px;
+padding-top:60px ;
+}
+.pack-card h3 {
+  font-family: "Nunito-Extra-Bold";
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--font-color); 
+  margin: 60px 0  5px;
+  
+}
+
+
+.pack-card p{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--p-color);  
+  text-align: center;
+  margin: 50px 0;
+  align-items: center;
+  margin: 50px 160px;
+  /* width: 186px;
+  height: 225px; */
+}
+.price{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.price p{
+  margin: 0;
+  color: var(--orange);
+  font-family: "Nunito-Extra-Bold";
+  margin-bottom: 60px;
+  
+}
+p.price-number{
+  font-size: 50px;
+  line-height: 28px;
+}
+
+.pack-card a{
+  padding: 16px 40px;
+  background-color: var(--orange);
+  color: white;
+  border-radius: 30px;
+  width: 214px;
+}
+
+.packs-cards :hover , .pack-card:hover{
+  background: var(--bth-bg);
+  color:var(--white);
+  box-shadow: 0px 15px 40px rgba(255, 103, 61, 0.3);
+}
+
+.profesional{
+  display: flex;
+  flex-direction: row;
+  padding:102px 100px;
+  background-color: var(--what-we-do-color);
+  width: 70%;
+  border-radius:50px ;
+}
+
+.profesional p{
+  margin: 30px 0 50px ;  
+  width: 70%;
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.profesional a{
+  padding: 17px 35px;
+  background: var(--bth-bg);
+  border-radius: 30px;
+  box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
+color: var(--white);
+}
+
+
+footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 130px;
+  width: 70%;
+  margin-bottom: 150px;
+  justify-content: space-around;
+}
+.footer-column{
+  padding: 0;
+  width: 35%;
+}
+
+.footer-column img{
+  width: 130px;
+  height:50px;
+  margin-bottom: 25px;
+  
+}
+
+.footer-column p{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 0 30px;
+  width: 50%;
+}
+
+.footer-column input{
+  width: 360px;
+  height:10px ;
+  border-radius: 30px;
+  box-shadow: 0px 12px 35px rgba(210, 197, 192, 0.25);
+  outline: none;
+  border: none;
+  padding: 30px 17px 20px;
+}
+
+.footer-column button{
+  background: var(--bth-bg);
+  color: var(--white);
+  border-radius: 30px;
+  width: 143px;
+  min-height: 50px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 700;
+  position: relative;
+left: 220px;
+bottom:55px
+}
+
+.footer-info h3{
+  color: var(--font-color);
+  font-family:"Nunito-Extra-Bold" ;
+  font-size: 28px;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+.footer-info li{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 33px;
+  color: var(--p-color); 
+ 
+}
+
+
+.footer-info li  a{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 33px;
+  color: var(--p-color);
+  
+}
+
+.copy{
+  font-family: "Quicksand-Regular";
+  font-size: 18px;
+  line-height: 33px;
+  color: var(--p-color);
+  margin-bottom: 30px;
+}
+.footer-cake{
+  width: 43px;
+  height: 55px;
+  position: relative;
+  left: 690px;
+  bottom: 150px;
 }
