@@ -34,3 +34,8 @@ const onClick = (element) => {
 
   clickedElement.classList.add("active-tab");
 };
+
+
+
+
+
