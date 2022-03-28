@@ -39,20 +39,38 @@
   --font-color:rgba(36, 40, 81, 1);
   --bth-bg:linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
   --white:#fff;
-
 --p-color:#707283;
 --green-gradient:linear-gradient(180deg, #C3E48F 0%, #8EC637 65%);
 --what-we-do-color: #FFECE4;
 --orange:rgba(255, 119, 81, 1);
 } 
 
+body::-webkit-scrollbar {
+  width: 8px;               /* ширина scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg-color);        /* цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange);    /* цвет плашки */
+  border-radius: 10px;       /* закругления плашки */
+  
+}
+
+
+
 body{
   margin: 0;
   padding: 0;
+
 }
 
 .container{
-  width:1920px;
+   width: 100%;
+   max-width: 100%;
+   overflow: hidden;
   margin: 0;
   padding: 0;
   display: flex;
@@ -69,7 +87,7 @@ header{
   flex-direction: row ;
   justify-content: space-between;
   padding: 63px 215px;
-  width: 1490px;
+  width: 77vw;
   height:60px;
 }
 
@@ -78,37 +96,31 @@ header img{
   height: 55px;
 }
 header ul {
-
   display: flex;
   flex-direction: row ;
- 
-
 }
+
 header ul li{
   flex-direction: row ;
   justify-content: space-around; 
   margin: 0 23px ;
 }
-header ul li a{
- 
-  color: var(--font-color);
 
-}
+header ul li a{ 
+  color: var(--font-color);
+ }
+
 .call-btn{
   width: 228px;
  height: 60px;
-
- color: var(--white);
-  
+ color: var(--white);  
  background: var(--bth-bg);
  border-radius: 30px;
-
-
 }
 
 
 .for-you-pets{
-  width: 1490px;
+  width: 77vw;
   display: flex;
   flex-direction: row;
   margin: 220px 315px 203px ;
@@ -122,11 +134,8 @@ header ul li a{
 
 .information{
   height: 640px;
- 
-  /* background-image: url(./images/Image.png);
-background-size: cover; */
-
 }
+
 h1{
   font-family: "Nunito-Extra-Bold";
   font-size: 64px;
@@ -134,11 +143,7 @@ h1{
   color: var(--font-color);
 }
 
-.for-you-pets h1 {
-/* font-weight: Bold;
-font-style:normal;
-
-color:var(--font-color); */
+.for-you-pets h1 {   
 font-size: 100px;
 width: 630px;
 line-height: 120px;
@@ -178,11 +183,10 @@ margin: 30px 0 0 0;
 .dog-img{
   width: 650px;
   height: 650px;
-
 }
 
 .what-we-do{
-  width: 1490px;
+  width: 77vw;
   height: 758px;
   background-color: var(--what-we-do-color);
   margin: 0 auto;
@@ -190,35 +194,23 @@ margin: 30px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
- 
-  
+  justify-content: center;   
 }
 
 .what-we-do p{
   font-family: "Nunito-Extra-Bold";
   color: var(--orange);
-
 }
 
-/* .what-we-do h1{
-  font-family: "Nunito-Extra-Bold";
-  font-size: 64px;
-  line-height: 87px;
-  color: var(--font-color);
-} */
 .cards-what-we-do{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  
-
- 
+  justify-content: space-around; 
 }
+
 .card-what-we-do{
-  width: 292px;
+  width: 20%;
   height: 374px;
   background-color: var(--white);
   display: flex;
@@ -235,12 +227,10 @@ transition-duration: 0.5s;
 
 .card-what-we-do h3{
   font-family:" Nunito-Extra-Bold";
-  size:26px;
+  font-weight: 500;
   line-height: 36px;
   text-align: center;
   }
-
-
 
 
 .card-what-we-do p{
@@ -249,54 +239,63 @@ transition-duration: 0.5s;
   width: 55%;
   align-items: center;
   text-align: center;
+  transition-duration: 0.5s;
 }
+
 .cards-what-we-do :hover   {
   background: var(--orange);
-  color: var(--white);
- 
+  color: var(--white); 
 }
+
+.cards-what-we-do :hover p  { 
+  color: var(--white); 
+}
+
 .story{
-margin: 104px 120px;
+  margin: 104px 120px;
   display: flex;
   flex-direction: row;
-
+  width: 85%;
 }
+
 .symbol{
   width: 66px;
   height: 77px;
   margin-right:129px ;
 }
+
 .story-information{
   margin-top: 75px;
+  width: 85%;
 }
 
 .story-information h3{
   font-family:"Nunito-Extra-Bold" ;
   color: var(--orange);
 }
-.story-information h1{
-  /* font-family: "Nunito-Extra-Bold";
 
-  line-height: 88px;
-  color: var(--font-color); */
-  width: 80%; 
-  margin: 0;
-  
+.story-information h1{
+  font-size: 50px;
+ width: 100%; 
+  margin: 0;  
 }
+
 .story-information p{
   font-family: "Quicksand-Regular";
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   color: var(--p-color);
-  width: 60%;
+  width: 100%;
   margin: 0 0 30px;
 }
+
 .story-information li{
-font-family:" Nunito-Extra-Bold";
+  font-family:" Nunito-Extra-Bold";
   color: var(--font-color);
-  margin-bottom: 26px;
-  
+  margin-bottom: 26px; 
+  width: 100%; 
 }
+
 .story-information ul ::before{
  content :  url(./images/Union.png);
 margin: 0px 15px 26px 0;
@@ -305,19 +304,19 @@ margin: 0px 15px 26px 0;
 .story-information ul :last-child{
   margin-bottom: 46px;
 }
+
 .story-information a{
   background: var(--bth-bg);
   border-radius: 30px;
   padding: 16px 35px;
   color: var(--white);
   box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
-  
-}
+  }
 
-.story .dog-img{
-  width: 492px;
-  height: 632px;
-}
+/* .dogImg{
+  width: 40%;
+  height: 432px;
+} */
 
 .team{
   display: flex;
@@ -330,11 +329,10 @@ margin: 0px 15px 26px 0;
   padding: 100px 0;
   border-radius: 50px;
 }
+
 .team h3{
   color:var(--orange);
-  margin-bottom: 10px;
-  
-  
+  margin-bottom: 10px;  
 }
 
 .team-cards{
@@ -343,8 +341,8 @@ margin: 0px 15px 26px 0;
   }
 
 .team-card{
-  width: 292px;
-  height: 405px;
+  width: 20%;
+  height: 305px;
   background-color: var(--white);
   border-radius: 146px;
   margin: 60px 20px;  
@@ -352,19 +350,23 @@ margin: 0px 15px 26px 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition-duration: 1s;
+  box-shadow: 0px 15px 40px rgba(217, 200, 193, 0.3);
+}
 
-}
 .team-card img{
-  width: 192px;
-  height: 192px;
-  margin-bottom: 30px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
 }
+
 .team-card .name{
   font-family: "Nunito-Extra-Bold";
   font-size: 24px;
   line-height: 33px;
   color: var(--font-color);
   margin-bottom: 7px;
+  text-align: center;
 }
 
 .job{
@@ -377,9 +379,9 @@ margin: 0px 15px 26px 0;
   height: 75px;
   margin-top: 150px;
  position: relative;
- left:800px;
- 
+ left: 900%
 }
+
 .packs{
   display: flex;
   flex-direction: row;  
@@ -397,18 +399,18 @@ margin: 0px 15px 26px 0;
 }
 
 .pack-card{
+  width: 35%;
   background-color: var(--white);
   text-align: center;
-  width:30%;
   height: 743px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
-
-border: black solid 6px;
 padding-top:60px ;
-}
+border-radius: 20px;
+} 
+
 .pack-card h3 {
   font-family: "Nunito-Extra-Bold";
   font-size: 28px;
@@ -421,21 +423,28 @@ padding-top:60px ;
 
 .pack-card p{
   font-family: "Quicksand-Regular";
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 25px;
   color: var(--p-color);  
-  text-align: center;
-  margin: 50px 0;
+  text-align: center; 
   align-items: center;
-  margin: 50px 160px;
+  margin: 50px auto;  
   /* width: 186px;
   height: 225px; */
 }
+ 
+.pack-card  :nth-child(3){
+   width: 186px;
+  height: 225px; }
+
 .price{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 0;
+
 }
+
 .price p{
   margin: 0;
   color: var(--orange);
@@ -443,6 +452,7 @@ padding-top:60px ;
   margin-bottom: 60px;
   
 }
+
 p.price-number{
   font-size: 50px;
   line-height: 28px;
@@ -456,10 +466,19 @@ p.price-number{
   width: 214px;
 }
 
-.packs-cards :hover , .pack-card:hover{
-  background: var(--bth-bg);
-  color:var(--white);
+.pack-card:hover{
+  background: var(--bth-bg); 
   box-shadow: 0px 15px 40px rgba(255, 103, 61, 0.3);
+height: 843px;
+}
+
+.pack-card:hover h3,.pack-card:hover h1,.pack-card:hover p{
+  color: var(--white);
+}
+
+.pack-card:hover a{
+  background: var(--white);
+  color: var(--orange);
 }
 
 .profesional{
@@ -496,6 +515,7 @@ footer{
   margin-bottom: 150px;
   justify-content: space-around;
 }
+
 .footer-column{
   padding: 0;
   width: 35%;
@@ -518,12 +538,12 @@ footer{
 
 .footer-column input{
   width: 360px;
-  height:10px ;
+  height:4px ;
   border-radius: 30px;
   box-shadow: 0px 12px 35px rgba(210, 197, 192, 0.25);
   outline: none;
   border: none;
-  padding: 30px 17px 20px;
+  padding: 30px 17px;
 }
 
 .footer-column button{
@@ -547,6 +567,7 @@ bottom:55px
   line-height: 38px;
   margin-bottom: 25px;
 }
+
 .footer-info li{
   font-family: "Quicksand-Regular";
   font-size: 18px;
