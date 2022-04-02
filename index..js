@@ -4,6 +4,12 @@ let btn = document.querySelectorAll('button');
 a.forEach(element => {
   element.onclick = function () { alert("click"); }
 });
+
+
+let callBtn = document.querySelector('.call-btn');
+callBtn.onclick = function () {
+  alert("do you wanna click on me?");
+}
 // btn.forEach(element => {
 //   element.onclick = function () { alert("click"); }
 // });
@@ -13,9 +19,9 @@ btn.forEach(element => element.id = "example");
 a.forEach(element => element.id = "example");
 
 
-btn.forEach(element => {
-  element.onclick = function () { console.log(this); }
-});
+// btn.forEach(element => {
+//   element.onclick = function () { console.log(this); }
+// });
 
 
 
